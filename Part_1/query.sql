@@ -1,31 +1,27 @@
 SELECT 
-  product_id as productID, weight as totalWeight
+  op.product_id AS productID, 
+  (op.quantity * p.weight) AS totalWeight
 FROM 
-  products 
+  orders_products AS op
+JOIN 
+  products AS p ON op.product_id = p.product_id
 WHERE 
-  product_id IN(
+  op.order_id IN (
     SELECT 
-      product_id 
+      order_id 
     FROM 
-      orders_products 
+      route_segments 
     WHERE 
-      order_id IN (
-        SELECT 
-          order_id 
-        FROM 
-          route_segments 
-        WHERE 
-          segment_end_time LIKE '%2024-02-13%' 
-          AND segment_type = 'STOP'
-      ) 
-      AND order_id IN (
-        SELECT 
-          order_id 
-        FROM 
-          orders 
-        WHERE 
-          customer_id = 32
-      )
+      segment_end_time LIKE '%2024-02-13%' 
+      AND segment_type = 'STOP'
+  ) 
+  AND op.order_id IN (
+    SELECT 
+      order_id 
+    FROM 
+      orders 
+    WHERE 
+      customer_id = 32
   )
-  ORDER BY weight;
-
+ORDER BY 
+  totalWeight;
