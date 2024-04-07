@@ -6,6 +6,7 @@
 * [Part 1. Data modelling [SQL]](#part-1-data-modelling-sql)
 * [Part 2. Data analysis and visualisation](#part-2-data-analysis-and-visualisation)
 * [Part 3. Building and verifying the hypothesis](#part-3-building-and-verifying-the-hypothesis)
+* [Setup](#setup)
 
 ### General info:
 The aim of this task is to explore 'droptime' database and complete assigned tasks.
@@ -39,6 +40,11 @@ Report is available [here](Part_2/Natalia_Wrześniak_analysis.pdf)
 ### Part 3. Building and verifying the hypothesis
 
 Report covering issues connected with that section is available [here](Part_3/Natalia_Wrześniak_research.pdf)
+### Setup
+If you want to further explore analyzed available here data just, clone this repository:
+   ```sh
+   git clone https://github.com/natix-x/Natalia_Wrzesniak_07.04.2024_Krakow.git
+   ```
 
 
 
