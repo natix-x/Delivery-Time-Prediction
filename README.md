@@ -10,8 +10,8 @@
 ### General info:
 The aim of this task is to explore 'droptime' database and complete assigned tasks.
 
-# Requirements:
-python 3.11+
+### Requirements and used libraries:
+python 3.11+, pandas, seaborn, matplotlib, numpy
 
 ### Part 1. Data modelling [SQL]
 * creation of database: 'droptime' and population it with data based on the received SQL Script: 'droptime.sql'
@@ -28,6 +28,13 @@ All files connected with that part are stored in 'Part_1' directory.
 Created SQL query is exported as SQL Script: [query.sql](Part_1/query.sql)
 Results are exported as CSV file: [Natalia_Wrześniak.csv](Part_1/Natalia_Wrześniak.csv)
 ### Part 2. Data analysis and visualisation
+* generation of histogram showing the actual delivery length with 1 minute granularity
+* histogram showing prediction error (difference between planned and
+actual delivery times
+* visualization of actual delivery times in different sectors
 
+All code connected with data analysis and visualization in available [here](Part_2/data_analysis_and_visualization.ipynb)
+
+Report is available [here](Part_2/)
 
 
