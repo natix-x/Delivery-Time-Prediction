@@ -3,6 +3,7 @@
 ## Table of contents: 
 * [General info](#general-info)
 * [Requirements](#requirements)
+* [Database](#database)
 * [Part 1. Data modelling [SQL]](#part-1-data-modelling-sql)
 * [Part 2. Data analysis and visualisation](#part-2-data-analysis-and-visualisation)
 * [Part 3. Building and verifying the hypothesis](#part-3-building-and-verifying-the-hypothesis)
@@ -10,9 +11,15 @@
 
 ### General info:
 The aim of this task is to explore 'droptime' database and complete assigned tasks.
+It foucuses mainly on creation high quality reports easy to understand for non-technical people.
 
 ### Requirements and used libraries:
 python 3.11+, pandas, seaborn, matplotlib, numpy
+
+### Database
+Droptime.sql was used it to create a database and populate it with data.
+MySQL was used as SQL-compliant relational database engine.
+Data definition is also available in 'database' directory.
 
 ### Part 1. Data modelling [SQL]
 * creation of database: 'droptime' and population it with data based on the received SQL Script: 'droptime.sql'
@@ -43,7 +50,7 @@ Report covering issues connected with that section is available [here](Part_3/Na
 ### Setup
 If you want to further explore analyzed available here data just, clone this repository:
    ```sh
-   git clone https://github.com/natix-x/Natalia_Wrzesniak_07.04.2024_Krakow.git
+   git clone https://github.com/natix-x/Delivery-time-prediction.git
    ```
 
 
