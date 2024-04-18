@@ -50,7 +50,7 @@ Report covering issues connected with that section is available [here](Part_3/Na
 ### Setup
 If you want to further explore analyzed available here data just, clone this repository:
    ```sh
-   git clone https://github.com/natix-x/Delivery-time-prediction.git
+   git clone https://github.com/natix-x/Delivery-Time-Prediction.git
    ```
 
 
