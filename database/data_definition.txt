@@ -1,0 +1,20 @@
+Data of historical deliveries in our system is stored in 4 separate tables defined as:
+1. orders:
+- order_id - unique identifier of an order (primary key),
+- customer_id - identifier of a customer that made an order,
+- sector_id - identifier of a geographic area,
+- planned_delivery_duration - estimated delivery duration in seconds,
+2. products:
+- product_id - unique identifier of a product (primary key),
+- weight - weight of a product in grams,
+3. orders_products
+- order_id - identifier of an order,
+- product_id - identifier of a product,
+- quantity - number of these products in an order,
+4. route_segments:
+- segment_id - unique identifier of a segment (primary key),
+- driver_id - identifier of a driver,
+- segment_type - type of a segment (DRIVE, STOP),
+- order_id - identifier of an order delivered in the segment (only when type = STOP),
+- segment_start_time - timestamp of segment start,
+- segment_end_time - timestamp of segment end
